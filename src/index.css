@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.gradient {
+  background: linear-gradient(92.9deg, #436073 23.29%, rgba(67, 96, 115, 0.57) 48.75%, rgba(255, 255, 255, 0) 72.69%);
+}
+
+.cta {
+  background: #FC916A;
+  padding-block: 16px;
+  padding-inline: 53px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cta:hover {
+  background: rgba(252, 145, 106, 0.9);
+}
+
+/* 
+.rsis-container+div button {
+  border: #FC916A !important;
+  background: #fff !important;
+}
+
+.rsis-container+div button:focus {
+  background: #FC916A !important;
+} */
