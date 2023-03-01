@@ -48,11 +48,26 @@ const ProjectSection = () => {
             </div>
             <div className="grid grid-cols-3 gap-9 my-8">
                 {projectType === "AICHYK"
-                    ? projects1.map((project) => <Card data={project} />)
+                    ? projects1.map((project, idx) => (
+                          <Card
+                              key={idx}
+                              data={project}
+                          />
+                      ))
                     : projectType === "CCMTProjects"
-                    ? projects2.map((project) => <Card data={project} />)
+                    ? projects2.map((project, idx) => (
+                          <Card
+                              key={idx}
+                              data={project}
+                          />
+                      ))
                     : projectType === "SandeepanyHimalayas"
-                    ? projects3.map((project) => <Card data={project} />)
+                    ? projects3.map((project, idx) => (
+                          <Card
+                              key={idx}
+                              data={project}
+                          />
+                      ))
                     : ""}
             </div>
         </div>
