@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { selectUser } from "../features/user/userSlice";
 import axios from "axios";
 
-const CreateBlog = () => {
+const CreateBlog = ({ setIsChanged }) => {
     const [blogToSend, setBlogToSend] = useState({
         title: "",
         text: "",
@@ -29,6 +29,7 @@ const CreateBlog = () => {
                     title: "",
                     text: "",
                 });
+                setIsChanged(true);
             })
             .catch((err) => {
                 alert(err.response.data.message);

@@ -108,7 +108,7 @@ const Login = () => {
                                         to={"/signup"}
                                         className="font-medium text-accent hover:underline "
                                     >
-                                        <h1 className="cursor-pointer">Sign up</h1>
+                                        <span className="cursor-pointer">Sign up</span>
                                     </Link>
                                 </p>
                             </form>

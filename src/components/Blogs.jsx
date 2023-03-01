@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Blogs = () => {
+const Blogs = ({ isChanged }) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const Blogs = () => {
         };
 
         fetchBlogs();
-    }, []);
+    }, [isChanged]);
 
     const handleDelete = (blogId) => {
         let objToSend = {
