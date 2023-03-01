@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../features/user/userSlice";
 
@@ -102,14 +102,14 @@ const Login = () => {
                                 >
                                     {loading ? "Verifying..." : "Sign in"}
                                 </button>
-                                <p className="text-sm font-light text-gray-500">
+                                <p className="text-sm font-light text-gray-500 flex gap-2">
                                     Don't have an account yet?{" "}
-                                    <a
-                                        href="/signup"
+                                    <Link
+                                        to={"/signup"}
                                         className="font-medium text-accent hover:underline "
                                     >
-                                        Sign up
-                                    </a>
+                                        <h1 className="cursor-pointer">Sign up</h1>
+                                    </Link>
                                 </p>
                             </form>
                         </div>
